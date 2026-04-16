@@ -1,0 +1,7 @@
+.env
+node_modules/
+
+# Built web app
+public/assets/
+public/index.html
+public/vite.svg

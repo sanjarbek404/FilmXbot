@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tgBase: var(--tg-theme-bg-color);
+  --color-tgText: var(--tg-theme-text-color);
+  --color-tgHint: var(--tg-theme-hint-color);
+  --color-tgLink: var(--tg-theme-link-color);
+  --color-tgButton: var(--tg-theme-button-color);
+  --color-tgButtonText: var(--tg-theme-button-text-color);
+  --color-tgSecondaryBg: var(--tg-theme-secondary-bg-color);
+}
+
+body {
+  background-color: var(--tg-theme-bg-color, #111827);
+  color: var(--tg-theme-text-color, #ffffff);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+}

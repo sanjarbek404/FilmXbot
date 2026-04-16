@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: kino-bot
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: MONGODB_URI
+        sync: false
+      - key: ADMIN_ID
+        sync: false
+      - key: MAIN_CHANNEL
+        sync: false
+      - key: NODE_ENV
+        value: production
+      - key: RENDER_EXTERNAL_URL
+        sync: false
+        # Render specifies this variable automatically, but defining it makes it explicit.
+        # It's needed for the webhook setup in the bot code.

@@ -1,0 +1,32 @@
+{
+  "name": "kino-bot",
+  "version": "1.0.0",
+  "description": "Telegram Kino Bot - O'zbek tilida",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "watch": "node --watch index.js",
+    "build:webapp": "npm install --prefix webapp && npm run build --prefix webapp",
+    "build": "npm run build:webapp"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "kino",
+    "movie"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.2",
+    "node-cache": "^5.1.2",
+    "telegraf": "^4.16.3"
+  }
+}
